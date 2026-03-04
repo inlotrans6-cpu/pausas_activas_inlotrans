@@ -2,8 +2,8 @@ const fetch = require('node-fetch');
 
 // Configuración desde variables de entorno
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const GITHUB_USERNAME = process.env.GITHUB_USERNAME || 'Neider435';
-const GITHUB_REPO = process.env.GITHUB_REPO || 'PAUSASACTIVAS';
+const GITHUB_USERNAME = process.env.GITHUB_USERNAME || 'inlotrans6-cpu';
+const GITHUB_REPO = process.env.GITHUB_REPO || 'pausas_activas_inlotrans';
 
 exports.handler = async (event, context) => {
   // Solo permitir método POST
@@ -109,4 +109,5 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({ error: error.message })
     };
   }
+
 };
